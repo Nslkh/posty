@@ -23,23 +23,22 @@
       </ul>
 
       <ul class="flex items-center">
-        @auth
+        @if(auth()->user())
         <li>
           <a href="" class="p-3">Narzullo Salakhidinov</a>
         </li>
         <li>
-          <a href="" class="p-3">Logout</a>
+          <a href="{{ route ('logout')}}" class="p-3">Logout</a>
         </li>
-        @endauth
+        @else
 
-        @guest
         <li>
-          <a href="" class="p-3">Login</a>
+          <a href="{{ route('login')}}" class="p-3">Login</a>
         </li>
         <li>
           <a href="{{ route ('register') }}" class="p-3">Register</a>
         </li>
-        @endguest            
+        @endif          
       </ul>
     </nav>
     @yield('content')
