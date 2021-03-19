@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
+   
+
     public function index()
     {
         return view('auth.register');
