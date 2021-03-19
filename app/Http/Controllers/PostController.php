@@ -10,4 +10,9 @@ class PostController extends Controller
     {
         return view('posts.index');
     }
+
+    public function store(Request $request)
+    {
+        dd('ok');
+    }
 }
