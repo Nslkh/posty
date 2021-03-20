@@ -25,8 +25,10 @@
 
       @if ($posts->count())
         @foreach ($posts as $post)
-          <div class="">
-            Post            
+          <div class="mb-4">
+            <a href="" class="font-bold">Olluzran</a> <span class="text-gray-600 text-sm">date</span>   
+
+            <p class="mb-2">{{ $post->body}}</p>        
           </div>
         @endforeach  
       @else
