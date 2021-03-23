@@ -9,7 +9,7 @@
 - TailwindCSS
 
 
-##Hot to run
+##How to run
 1. ```git clone https://github.com/Nslkh/posty```
 2. Enter you credentials in .env file
     - Database info
